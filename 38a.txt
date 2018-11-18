@@ -1,0 +1,17 @@
+#include<stdio.h>
+int main()
+{
+	int x[1000],a,b,n,i=0,d,s=0;
+	scanf("%d",&n);
+	for(i=0;i<n-1;i++)
+	{
+		scanf("%d",&x[i]);
+	}
+	scanf("%d%d",&a,&b);
+	
+	for(;a<b;a++)
+	{
+		s=s+x[a-1];
+	}
+	printf("%d",s);
+}
