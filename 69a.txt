@@ -1,0 +1,16 @@
+#include<stdio.h>
+main()
+{
+int a,b,c,d,sum1=0,sum2=0,sum3=0;
+scanf("%d",&a);
+int ar1[a],ar2[a],ar3[a];
+for(b=0;b<a;b++)
+{
+	scanf("%d %d %d",&ar1[b],&ar2[b],&ar3[b]);
+	sum1=sum1+ar1[b];
+	sum2=sum2+ar2[b];
+	sum3=sum3+ar3[b];
+}
+if(sum1==0&&sum2==0&&sum3==0) printf("YES");
+else printf("NO");
+}
