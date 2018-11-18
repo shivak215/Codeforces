@@ -1,0 +1,29 @@
+#include<stdio.h>
+int main()
+{
+int n,i,j,x[1000],d[1000],q=0;
+scanf("%d",&n);
+for(i=0;i<n;i++)
+{
+scanf("%d %d",&x[i],&d[i]);
+}
+for(i=0;i<n;i++)
+{
+for(j=i+1;j<n;j++)
+{
+if((x[i]+d[i])==x[j] && (x[j]+d[j])==x[i])
+{
+q=1;
+break;
+}
+}
+}
+if(q==1)
+{
+printf("YES");
+}
+else
+{
+printf("NO");
+}
+}
