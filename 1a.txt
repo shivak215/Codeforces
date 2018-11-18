@@ -1,0 +1,11 @@
+#include<stdio.h>
+int main()
+{
+ long long int m,n,a,d,e,f;
+	scanf("%I64d%I64d%I64d",&m,&n,&a);
+	d=(n+a-1)/a;
+	e=(m+a-1)/a;
+	f=e*d;
+	printf("%I64d ",f);
+
+}
