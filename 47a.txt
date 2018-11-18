@@ -1,0 +1,27 @@
+#include<stdio.h>
+main()
+{
+    int n,i,sum=0;
+    scanf("%d",&n);
+    for(i=1;i<n;i++)
+    {
+         sum=sum+i;
+        
+        if(sum==n)
+       
+       { printf("YES");
+        return 0;}
+        else
+        if(sum>n)
+       { printf("NO");
+        return 0;}
+        
+    }
+    if(n==1||n==0)
+    printf("YES");
+    if(n==2)
+    printf("NO");
+        
+    
+    
+}
