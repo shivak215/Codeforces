@@ -1,0 +1,25 @@
+#include<stdio.h>
+int main()
+{
+	int a,b,c,d[100],i;
+	scanf("%d%d%d",&a,&b,&c);
+	d[0]=(a*b*c);
+	d[1]=((a+b)*c);
+	d[2]=a*(b+c);
+	d[3]=((b+c)*a);
+	d[4]=a+b+c;
+	for(i=1;i<5;i++)
+	{
+	
+	for(i=0;i<4;i++)
+	 {   if(d[i]>d[i+1])
+       {
+			c=d[i];
+		d[i]=d[i+1];
+		d[i+1]=c;
+	}
+}
+ printf("%d",d[4]);	
+	
+}
+}
