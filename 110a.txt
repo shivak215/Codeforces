@@ -1,0 +1,19 @@
+#include<stdio.h>
+int main()
+{
+	long long int n,i,j=0,k;
+	scanf("%I64d",&n);
+	while(n!=0)
+	{
+		i=n%10;
+		if(i==4||i==7)
+		{
+			j++;
+		}
+		n=n/10;
+	}
+	if(j==4||j==7)
+		printf("YES");
+	else
+		printf("NO");
+}
