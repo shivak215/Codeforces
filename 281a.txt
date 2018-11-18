@@ -1,0 +1,38 @@
+#include<stdio.h>
+int main()
+{
+    char x[1000];
+    scanf("%s",x);
+    switch (x[0])
+    {
+        case 'a' : x[0]='A'; printf("%s",x); break;
+        case 'b' : x[0]='B'; printf("%s",x); break;
+        case 'c' : x[0]='C'; printf("%s",x); break;
+        case 'd' : x[0]='D'; printf("%s",x); break;
+        case 'e' : x[0]='E'; printf("%s",x); break;
+        case 'f' : x[0]='F'; printf("%s",x); break;
+        case 'g' : x[0]='G'; printf("%s",x); break;
+        case 'h' : x[0]='H'; printf("%s",x); break;
+        case 'i' : x[0]='I'; printf("%s",x); break;
+        case 'j' : x[0]='J'; printf("%s",x); break;
+        case 'k' : x[0]='K'; printf("%s",x); break;
+        case 'l' : x[0]='L'; printf("%s",x); break;
+        case 'm' : x[0]='M'; printf("%s",x); break;
+        case 'n' : x[0]='N'; printf("%s",x); break;
+        case 'o' : x[0]='O'; printf("%s",x); break;
+        case 'p' : x[0]='P'; printf("%s",x); break;
+        case 'q' : x[0]='Q'; printf("%s",x); break;
+        case 'r' : x[0]='R'; printf("%s",x); break;
+        case 's' : x[0]='S'; printf("%s",x); break;
+        case 't' : x[0]='T'; printf("%s",x); break;
+        case 'u' : x[0]='U'; printf("%s",x); break;
+        case 'v' : x[0]='V'; printf("%s",x); break;
+        case 'w' : x[0]='W'; printf("%s",x); break;
+        case 'x' : x[0]='X'; printf("%s",x); break;
+        case 'y' : x[0]='Y'; printf("%s",x); break;
+        case 'z' : x[0]='Z'; printf("%s",x); break;
+        default : printf("%s",x); break;
+        printf("%s",x);
+    }
+    return 0;
+}
