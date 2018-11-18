@@ -1,0 +1,15 @@
+#include<stdio.h>
+int main()
+{
+	int a,b,c,count=0,e[101];
+	scanf("%d%d",&a,&b);
+	for(c=0;c<a;c++)
+	{ scanf("%d",&e[c]);
+}for(c=0;c<a;c++)
+{	if(e[c]>=e[b-1]&&e[c]!=0)
+{	count=count+1;
+	}
+	}
+	printf("%d",count);
+	
+}
