@@ -1,0 +1,14 @@
+#include<stdio.h>
+int main(){
+    int i,j,cnt=0;
+    char n[101];
+    scanf("%s",n);
+    for(i=0;n[i];i++)
+        for(j=0;j<i;j++)
+            if(n[j]==n[i]){
+                n[j]=0;
+                cnt++;
+            }
+    printf((i-cnt)%2?"IGNORE HIM!":"CHAT WITH HER!");
+    return 0;
+}
