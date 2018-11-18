@@ -1,0 +1,32 @@
+#include<stdio.h>
+int main()
+{
+int i,j,n,k,s,e;
+ scanf("%d %d",&n,&k);
+ char arr[n];
+ scanf("%s",arr);
+ for(i=0;i<n;i++)
+ {
+   if(arr[i]=='G')s=i;
+   if(arr[i]=='T')e=i;
+ }
+ if(s>e)
+ {
+ if((s-e)%k!=0){printf("NO\n");return 0;}
+ for(j=s;j>=e;j-=k)
+ {
+ if(arr[j]=='#'){printf("NO\n");return 0;}                  
+ }
+ printf("YES\n");return 0;       
+ }
+if(s<e)
+ {
+ if((e-s)%k!=0){printf("NO\n");return 0;}
+ for(j=s;j<=e;j+=k)
+ {
+ if(arr[j]=='#'){printf("NO\n");return 0;}                  
+ }
+ printf("YES\n");return 0;       
+ }
+
+}
