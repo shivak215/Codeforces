@@ -1,0 +1,32 @@
+#include<stdio.h>
+int main()
+{
+	int a[10000],b,c,d,e=0,f=0,i=0;
+	scanf("%d",&b);
+	for(i=0;i<b;i++)
+	{
+		scanf("%d",&a[i]);
+	}
+	for(i=0;i<b;i++)
+	{
+		if(a[i]%2==0)
+		e=e+1;
+		else 
+		f=f+1;
+	}
+	if(e==1)
+	{
+	
+	for(i=0;i<b;i++)
+	{
+		if(a[i]%2==0)
+		printf("%d",i+1);	}
+	}
+		if(f==1)
+		{
+				for(i=0;i<b;i++)
+		{ if(a[i]%2!=0)
+		printf("%d",i+1);
+		}
+	}
+}
