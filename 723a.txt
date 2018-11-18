@@ -1,0 +1,32 @@
+#include<stdio.h>
+int main ()
+{
+	int arr[3];
+	
+	int i,s,a,j;
+	
+	for(i=0;i<3;i++)
+	{
+		scanf("%d",&arr[i]);
+		
+	}
+	
+	
+	
+	
+		for (i=0;i<3;++i)
+	{ 
+	   for(j=i+1;j<3;++j)
+		 { 
+		     if(arr[i]>arr[j])
+		 	  { a=arr[i];
+		 	    arr[i]=arr[j];
+		 	    arr[j]=a;} 
+		 }
+	}
+	s=arr[2]-arr[0];
+	
+	
+	printf("%d",s);
+	
+}
