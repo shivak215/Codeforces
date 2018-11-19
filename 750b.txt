@@ -1,0 +1,38 @@
+#include <bits/stdc++.h>
+#define ll long long
+#define babab printf("!!!!!\n");
+using namespace std;
+int main()
+{
+    int n,k;
+    cin>>n;
+    int ans=0;
+    string str;
+    bool flag=false;
+    for(int i=1;i<=n;i++)
+    {
+        cin>>k>>str;
+        if(str=="North"&&ans-k<0)
+            flag=true;
+        if(str=="South"&&k+ans>20000)
+            flag=true;
+        if(ans==20000&&str!="North")
+        flag=true;
+        if(ans==0&&str!="South")
+            flag=true;
+        if(str=="South")
+            ans+=k;
+        if(str=="North")
+            ans-=k;
+    }
+    if(flag)
+    {
+         cout<<"NO"<<endl;
+         return 0;
+
+    }
+    if(ans==0)
+        cout<<"YES"<<endl;
+    else
+        cout<<"NO"<<endl;
+}
