@@ -1,0 +1,53 @@
+#include<stdio.h>
+main()
+{
+	
+	int m,d;
+	scanf("%d",&m);
+    scanf("%d",&d);
+	if(m==1||m==3||m==5||m==7||m==8||m==10||m==12)	
+	{
+	 switch(d)
+	 {
+	 	case 1: printf("5");break;
+	 	case 2:printf("5");break;
+	 	case 3:printf("5");break;
+	 	case 4:printf("5");break;
+	 	case 5:printf("5");break;
+	 	case 6:printf("6");break;
+	 	case 7:printf("6");break;
+	 	
+	 	
+	 }
+}
+else if(m==2)
+	{
+		switch(d)
+       { case 1: printf("4");break;
+       case 2: printf("5");break;
+       case 3: printf("5");break;
+       case 4: printf("5");break;
+       case 5: printf("5");break;
+       case 6: printf("5");break;
+       case 7: printf("5");break;
+			   }		
+		
+	}
+	
+	else if(m==4||m==6||m==9||m==11)
+	{
+		switch(d)
+		{
+			case 1: printf("5");break;
+			case 2: printf("5");break;
+			case 3: printf("5");break;
+			case 4: printf("5");break;
+			case 5: printf("5");break;
+			case 6: printf("5");break;
+			case 7: printf("6");break;	
+		}
+		
+		
+		
+	}
+}

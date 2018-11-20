@@ -1,0 +1,26 @@
+#include<stdio.h>
+#include<string.h>
+int main()
+{
+	int i,n,z=0;
+	char a[20];
+	scanf("%d",&n);
+	for(i=0;i<n;i++)
+	{
+		scanf("%s",&a);
+		switch(a[0])
+		{
+			case 'T':z=z+4;break;
+			case 'C':z=z+6;break;
+			case 'O':z=z+8;break;
+			case 'D':z=z+12;break;
+			case 'I':z=z+20;break;
+			
+		}
+		
+	}
+		printf("%d",z);	
+
+	
+	
+}

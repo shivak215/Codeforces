@@ -1,0 +1,12 @@
+#include<stdio.h>
+int main(){
+	int a,b,c;
+	int t;
+	scanf("%d %d %d",&a,&b,&c);
+	t=(c+1)/2;
+	printf("%d ",(t-1)/b+1);
+	printf("%d ",(t-1)%b+1);
+	if(c%2==0)printf("R");
+	else printf("L");
+	return 0;
+}
