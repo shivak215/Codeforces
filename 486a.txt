@@ -1,0 +1,16 @@
+#include<stdio.h>
+main()
+{
+    long long int n,x;
+    scanf("%I64d",&n);
+if(n>=1)
+{
+    if(n%2==0)
+    x=n/2;
+    else
+    x=-1*(n+1)/2;
+}
+    printf("%I64d",x);
+
+
+}
