@@ -1,0 +1,14 @@
+#include<stdio.h>
+int main()
+{
+	int n,i=0,b;
+	float q,c=0,a[10000];
+	scanf("%d",&n);
+	for(i=0;i<n;i++)
+	{scanf("%f",&a[i]);
+	  c=c+a[i];
+	}
+	q=c/n;
+	printf("%f",q);
+	
+}
