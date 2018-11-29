@@ -1,0 +1,16 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+		long long int a, b;
+		cin>>a>>b;
+		for(int i=1;i<=b;i++)
+		 {
+			if(a%i!=(i-1))
+			{
+				cout<<"No";
+				return 0;
+			}
+		}
+	cout<<"Yes"<<endl;
+}
