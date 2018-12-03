@@ -1,0 +1,23 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+	int n,a,b,c,cnt=0,t;
+	cin>>n>>a>>b>>c;
+	//ax+by+cz=n
+	for(int i=0;i<=n;i++)
+	{
+		for(int j=0;j<=n;j++)
+		{
+			t=n-a*i-b*j;
+		//	cout<<t<<endl;
+			
+			if(t>=0&&t%c==0)
+			{
+				cnt=max(cnt,(i+j+(t/c)));
+				//	cout<<t<<endl;
+			}
+		}
+	}
+	cout<<cnt;
+}
