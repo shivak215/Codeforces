@@ -1,0 +1,34 @@
+#include<bits/stdc++.h>
+using namespace std;
+int a[100000];
+void chk()
+{
+	int i=1;
+	a[0]=0;
+	a[1]=1;
+	for(int i=2;i<2000;i++)
+    {
+    	a[i]=a[i-1]+a[i-2];
+	}
+}//OOOoOooO
+int main()
+{
+	chk();
+	int n,cnt=0;
+	cin>>n;//OOOoOooO
+	for(int i=1;i<=n;i++)
+	{
+		cnt=0;
+		for(int j=0;j<1000;j++)
+		{
+			if(a[j]==i)
+			{
+				cnt=1;
+				cout<<"O";
+				break;
+			}
+		}
+		if(cnt==0)cout<<"o";
+	}
+	
+}
