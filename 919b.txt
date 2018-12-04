@@ -1,0 +1,34 @@
+#include<bits/stdc++.h>
+using namespace std;
+long long int a[100000];
+void chk()
+{
+long long int i=19, y,cnt,j=0;
+	while(j<=10000)
+	{
+	    
+	    	y=i,cnt=0;
+		while(y>0)
+		{
+			cnt+=y%10;
+			y=y/10;
+		}
+		if(cnt==10)
+		{
+			a[j]=i;
+			j++;
+		}
+	   i=i+9; 
+	}
+
+	
+	
+}//19 28 37 46 55 64 73 82 91 100 109
+int main()
+{
+	chk();
+	long long int k;
+	cin>>k;
+	cout<<a[k-1];
+	
+}
