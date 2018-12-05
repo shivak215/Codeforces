@@ -1,0 +1,10 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+	int n,m,cnt=0,t;
+	cin>>n>>m;
+	int y=(n+m)/3;
+	cnt=min(n,m);
+	cout<<min(y,cnt);
+}
