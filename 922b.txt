@@ -1,0 +1,27 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{   
+    ios_base::sync_with_stdio(NULL);cin.tie(NULL);cout.tie(NULL);
+  long long	int a,b,c,n,cnt=0,t;
+	cin>>n;
+	for(int i=1;i<=n;i++)
+	{
+		for(int j=i;j<=n;j++)
+		{
+			
+			 t=i^j;
+		//	cout<<t<<endl;
+				if(t<=n&&(i+j)>t&&((i<=j)&&(j<=t)))
+				{
+					cnt++;
+				//	cout<<i<<" "<<j<<" "<<t<<endl;
+					
+				//	cout<<i<<"  "<<j<<"  "<<k<<" "<<endl;
+				}
+				
+			
+		}
+	}
+	cout<<cnt;
+}
