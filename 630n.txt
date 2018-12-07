@@ -1,0 +1,15 @@
+#include<bits/stdc++.h>
+using namespace std;
+map<string,string>mp;
+int main()
+{
+   int a,b,c;
+     double x=0,y=0,z=0;
+     cin>>a>>b>>c;
+     z=sqrt(b*b-4*a*c);
+     x=(-b+z)/(2*a);
+     y=(-b-z)/(2*a);
+    if(x>y)cout<<fixed<<setprecision(12)<<x<<"\n"<<y;
+    else cout<<fixed<<setprecision(12)<<y<<"\n"<<x;
+ 
+}
