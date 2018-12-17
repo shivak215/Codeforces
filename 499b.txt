@@ -1,0 +1,24 @@
+#include<bits/stdc++.h>
+using namespace std;
+map<string,string>mp;
+int main()
+{
+	int n,m;
+	cin>>n>>m;
+	string x,y;
+	for(int i=0;i<m;i++)
+	{
+		cin>>x>>y;
+		mp[x]=y;
+	}
+	string z;
+	for(int i=0;i<n;i++)
+	{
+		cin>>z;
+		int w=z.size();
+		int q=mp[z].size();
+		if(w>q)
+		cout<<mp[z]<<"  ";
+		else cout<<z<<"  ";
+	}
+}
